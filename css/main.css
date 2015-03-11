@@ -66,15 +66,13 @@ body {
 }
 
 /* Typography */
-h1, h2, h3
-{
+h1, h2, h3 {
     font-family: 'Bitter', serif;
 }
 
 
 /* Layout */
-.big-center
-{
+.big-center {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
