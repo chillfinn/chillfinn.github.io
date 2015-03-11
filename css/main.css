@@ -4,11 +4,6 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    height: 100%;
-}
-
-body {
-    height: 100%;
 }
 
 ::-moz-selection {
@@ -61,6 +56,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Change some defaults */
+html {height: 100%;}
+
+body {
+    height: 100%;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Typography */
+h1, h2, h3
+{
+    font-family: 'Bitter', serif;
+}
+
+
+/* Layout */
 .big-center
 {
     position: relative;
@@ -71,18 +83,6 @@ textarea {
 
     text-align:center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
