@@ -70,6 +70,11 @@ h1, h2, h3 {
     font-family: 'Bitter', serif;
 }
 
+a {
+    color: #daa520;
+    text-decoration: none;
+}
+
 /* Layout */
 .big-center {
     position: relative;
