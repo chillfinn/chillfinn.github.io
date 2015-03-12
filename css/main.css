@@ -78,12 +78,13 @@ a {
 
 /* Layout */
 
-.band {
-	padding: 1em 0;
-} 
 
-.main-color {
+.big-band {
+	display: block;
+	padding: 1em;
+
 	background: #daa520;
+	color: #fff;
 }
 
 .main-color a {color: #fff;}
