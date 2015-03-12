@@ -63,6 +63,7 @@ body {
     height: 100%;
 
     font-family: 'Raleway', sans-serif;
+    text-align:center;
 }
 
 /* Typography */
@@ -76,15 +77,7 @@ a {
 }
 
 /* Layout */
-.big-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 
-    width:100%;
-
-    text-align:center;
-}
 
 /* ==========================================================================
    Media Queries
