@@ -81,6 +81,7 @@ a {
 
 .big-band {
 	display: block;
+	margin: 0;
 	padding: 1em;
 
 	background: #daa520;
