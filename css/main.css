@@ -78,6 +78,16 @@ a {
 
 /* Layout */
 
+.band {
+	padding: 1em 0;
+} 
+
+.main-color {
+	background: #daa520;
+}
+
+.main-color a {color: #fff;}
+
 .twitter-timeline {padding: 0 1em;}
 
 
