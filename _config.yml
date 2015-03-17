@@ -1,0 +1,12 @@
+# Site settings
+title: Chillfinn Jekyll
+email: ville@chillfinn.com
+description: > # this means to ignore newlines until "baseurl:"
+  My experimental site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chillfinn.github.io" # the base hostname & protocol for your site
+twitter_username: chillfinn
+github_username:  chillfinn
+
+# Build settings
+markdown: kramdown
