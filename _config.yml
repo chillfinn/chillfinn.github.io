@@ -1,4 +1,5 @@
 # Site settings
+
 title: Chillfinn Jekyll
 email: ville@chillfinn.com
 description: > # this means to ignore newlines until "baseurl:"

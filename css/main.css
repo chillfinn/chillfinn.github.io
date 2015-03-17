@@ -1,0 +1,216 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Change some defaults */
+html {height: 100%;}
+
+body {
+    height: 100%;
+
+    font-family: 'Raleway', sans-serif;
+    text-align:center;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Bitter', serif;
+}
+
+a {
+    color: #daa520;
+    text-decoration: none;
+}
+
+/* Layout */
+
+
+.big-band {
+	display: block;
+	margin: 0;
+	padding: 1em;
+
+	background: #daa520;
+	color: #fff;
+}
+
+.main-color a {color: #fff;}
+
+.twitter-timeline {padding: 0 1em;}
+
+
+/* Link icons */
+
+.social {font-size: 3em;}
+
+@font-face {
+	font-family: 'icons';
+	src:url('fonts/icons.eot');
+	src:url('fonts/icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icons.woff') format('woff'),
+		url('fonts/icons.ttf') format('truetype'),
+		url('fonts/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-twitter, .icon-linkedin, .icon-disk {
+	font-family: 'icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-twitter:hover {color: #2BACB5;}
+.icon-linkedin:hover {color: #B4CCB9;}
+.icon-disk:hover {color: #E84D5B;}
+
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-linkedin:before {
+	content: "\e000";
+}
+.icon-disk:before {
+	content: "\e002";
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
