@@ -1,6 +1,17 @@
 .para-shape {
+    background: url('http://www.btomaha.com/wp-content/uploads/2015/04/spring.jpg');
+    background-size: cover;
 	float: left;
 	height: 13em;
 	width: 12em;
 	shape-outside: polygon(nonzero, 0px 110px, 2px 4px, 201px 4px, 107px 119px, 158px 210px, -3px 252px);
+    -webkit-clip-path:  polygon(nonzero, 0px 0px, 192px 0px, 101px 135px, 151px 209px, 0px 208px);
+}
+
+.pull-quote{
+  shape-outside: content-box;
+    shape-margin: 1em;
+    margin-right: 1em;
+  margin-top: 100px;
+  float: left;
 }
