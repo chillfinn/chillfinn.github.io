@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+	<style>
+		#new-icon {
+		  position: relative;
+		    float:left;
+		    
+		  background: #333;
+		  text-indent: -999em;
+		  width: 150px;
+		  height: 150px;
+		  border-radius: 50%;
+		  overflow: hidden;
+		    
+		-webkit-animation: spin 1s infinite linear;
+		    animation: spin 1s infinite linear;
+		}
+		
+		#new-icon:before {
+		    position: absolute;
+		    bottom: 20px;
+		    right: 1px;
+		    
+		    border-radius: 50%;
+		    height: 100px;
+		    width: 100px;
+		    
+		    background: #fff;
+		    content: '/20';
+		}
+		
+		#new-icon:after {
+		    position: absolute;
+		    bottom: 40px;
+		    right: 2px;
+		    
+		    border-radius: 50%;
+		    height: 50px;
+		    width: 50px;
+		    
+		    background: #333;
+		    content: '/20';
+		}
+		
+		#new-icon.other {
+		    background: red;  
+		-webkit-animation: spinback 1.5s infinite linear;
+		    animation: spinback 1.5s infinite linear;    
+		}
+		
+		@-webkit-keyframes spin {
+		    0%   {-webkit-transform: rotate(0deg)}
+		    100% {-webkit-transform: rotate(360deg)}
+		}
+		
+		@keyframes spin {
+		    0%   {transform: rotate(0deg)}
+		    100% {transform: rotate(360deg)}
+		}
+		
+		@-webkit-keyframes spinback {
+		    0%   {-webkit-transform: rotate(0deg)}
+		    100% {-webkit-transform: rotate(-360deg)}
+		}
+		
+		@keyframes spinback {
+		    0%   {transform: rotate(0deg)}
+		    100% {transform: rotate(-360deg)}
+		}
+
+	</style>
+
+    <title>Chillfinn.GitHub.io/animation1</title>
+  </head>
+
+  <body>
+
+    <div id="new-icon"></div>
+
+    <div id="new-icon" class="other"></div>
+
+     <a href="index.html">Back</a>
+    
+  </body>
+</html>
