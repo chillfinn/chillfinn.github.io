@@ -1,0 +1,162 @@
+// Finn Style Variables
+$base-font-family: 'Lora', sans-serif;
+$secondary-font-family: 'Oswald', serif;
+
+$text-color:       #111;
+$background-color: #f7f7f7;
+$background-color-aside: #f2f2f2;
+$brand-color:      #fd4a4a;
+
+$darkest-border: #111;
+$light-border: #ccc;
+
+.logo {
+	display: block;
+
+	background: url('../assets/reindeer-head-silhouette.svg') 50% 50% no-repeat;
+	background-size:70% 70%;	
+	border: 1px dashed $darkest-border;
+	border-radius: 50%;
+	color: transparent;
+	
+	&:hover {
+		background-color: $brand-color;
+		background-size: 100% 100%;
+	}
+}
+
+/**
+ * Responsive typography base
+ */
+
+/* Older browsers */
+html { font-size: 16px;}
+
+/* Modern browsers only need this one */
+
+@media screen and (min-width: $small-screen){
+	html { 
+		font-size: calc( 1em + (19 - 16) * (100vw - 25em) / (800 - 400) );
+		line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21))); 
+	}
+}
+
+/**
+ * Basic styling
+ */
+ 
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $base-font-family;
+    font-weight: 300;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+
+
+	@media screen and (max-width: $medium-screen){
+		margin: 1em;
+	}
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font-family;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 0.25em;
+}
+
+@media screen and (min-width: $small-screen){
+	h1 {
+		font-size: 2.5em;
+	    line-height: 1.2;	
+	}
+	
+	h2 {
+		font-size: 1.75em;
+	}
+	
+	h3 {
+		font-size: 1.25em;
+		margin-bottom: 0.5em;	
+	}
+}
+
+/* Body styles */
+
+p {
+	margin-bottom: 1em;
+}
+
+.strong {
+	font-weight: normal;
+}
+
+
+ul, ol {
+
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+a {
+    color: $brand-color;
+    text-decoration: none;
+    @include transition(all .4s ease);
+
+    &:visited {
+        color: $brand-color;
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+    }
+    
+    -ms-word-break: break-all;
+
+         /* Be VERY careful with this, breaks normal words wh_erever */
+         word-break: break-all;
+
+         /* Non standard for webkit */
+         word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;    
+    
+}
+
+.read-more {
+    font-size: 0.75em;
+	&:after {
+		content: " \2192";
+	}    
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    border-left: 4px solid $brand-color;
+    margin-bottom: 1em;
+    padding-left: 1em;
+
+
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
